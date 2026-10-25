@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ololade Owojori - Portfolio</title>
+<title>Ololade Owojori - Digital Marketing Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -145,15 +145,19 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow fade" style="animation-delay:.05s">Portfolio</div>
+    <div class="eyebrow fade" style="animation-delay:.05s">Digital Marketing · Freelance</div>
     <h1 class="name fade" style="animation-delay:.12s">Ololade <em>Owojori</em></h1>
-    <div class="role fade" style="animation-delay:.2s">Your job title here</div>
-    <p class="summary fade" style="animation-delay:.28s">Add a short introduction here: who you are, what you do and the kind of work you want to be known for. Replace the placeholder projects below with your own work.</p>
+    <div class="role fade" style="animation-delay:.2s">Digital Marketing &amp; Automation</div>
+    <p class="summary fade" style="animation-delay:.28s">A working selection of freelance projects across paid media, SEO, content, analytics and marketing automation, grouped by discipline.</p>
     <div class="meta fade" style="animation-delay:.36s">
       <a href="mailto:ololadeowojori@gmail.com">✉ ololadeowojori@gmail.com</a>
       <a href="tel:07404541921">✆ 07404 541921</a>
     </div>
-</div>
+    <div class="stats fade" style="animation-delay:.44s">
+      <div class="stat"><b>10</b><span>Projects</span></div>
+      <div class="stat"><b>6</b><span>Disciplines</span></div>
+    </div>
+  </div>
 </header>
 
 <div class="controls">
@@ -171,7 +175,7 @@
 <footer>
   <div class="wrap">
     <div class="fname">Ololade Owojori</div>
-    <p>Get in touch at ololadeowojori@gmail.com or on 07404 541921.</p>
+    <p>Available for freelance digital marketing work. Reach me at ololadeowojori@gmail.com or on 07404 541921. References and live work samples available on request.</p>
   </div>
 </footer>
 
@@ -195,13 +199,139 @@ const DISC = {
 
 const PROJECTS = [
   {
-    client:'Your first project', emp:'Add employer or "Freelance"', period:'Add dates',
+    client:'Glix & Schedu (Gyzer Technologies)', emp:'Freelance', period:'2026 · 6 months',
+    disc:['ai','ppc','seo'],
+    blurb:'Full go-to-market and growth strategy for two VC-backed SaaS products, supported by an AI voice-agent workflow that contacted new leads within seconds of sign-up.',
+    context:'Glix (B2B) and Schedu (B2C) are SaaS products from Gyzer Technologies, a VC-backed technology company with approximately £10m in backing. The account was handed to me on a freelance basis with an approximately £100k marketing budget over six months to drive user acquisition and build the go-to-market engine across both products.',
+    did:[
+      'Developed the full go-to-market and growth strategy across acquisition, paid plans, CRM/lifecycle and post-acquisition marketing for both products.',
+      'Managed approximately £100k of launch investment over six months across Google Ads, paid social and wider acquisition activity to drive sign-ups for Glix and Schedu.',
+      'Delivered SEO and CRO alongside paid acquisition, including on-page and technical SEO plus conversion-rate optimisation across the funnel.',
+      'Designed and implemented a Retell AI voice-agent workflow, with n8n automating the surrounding process, to contact new leads within seconds of sign-up, qualify intent and book appointments with the sales team.',
+      'Built a full-funnel lifecycle approach beyond acquisition, tracking what happened after a lead entered the CRM and creating nurture and re-engagement paths for users who had not converted.'
+    ],
+    results:[['Free sign-ups','~4,000'],['Monthly active users','1,000+'],['Marketing budget','~£100k over 6 months']],
+    tools:['Google Ads','Meta Ads','Retell AI','n8n','SEO','CRO / heatmaps']
+  },
+  {
+    client:'HPP (Hill\u2019s Panel Products)', emp:'Freelance', period:'Dec 2025 – Jan 2026',
+    disc:['ppc','social'],
+    blurb:'Google Ads audit and a trade-focused social campaign for the Glide Frameless sliding door range.',
+    context:'HPP (Hill\u2019s Panel Products) is a trade supplier. I delivered a paid audit and a social campaign aimed at trade professionals: bedroom fitters, furniture makers and installers.',
+    did:[
+      'Audited a live Google Ads account and diagnosed a stark divide: remarketing delivering £6.38 per conversion against brand awareness at £235.35, roughly 37 times more expensive.',
+      'Identified about £135 a month of wasted competitor-brand spend, a dead-weight competitor ad group and missing call conversion tracking.',
+      'Scoped the Glide Frameless brief, scraped both landing pages to verify product claims, and caught factual errors including an incorrect décor count, a wrong width figure and a wrong handle colour.',
+      'Delivered eight Facebook and Instagram posts, a proofing document with a claim-by-claim verification table, and a detailed designer brief.'
+    ],
+    tools:['Google Ads','Meta','Landing page research']
+  },
+  {
+    client:'Physio Matters', emp:'Freelance', period:'2025 – 2026',
+    disc:['ppc','seo','analytics'],
+    blurb:'Eleven workstreams for a specialist clinic, starting with a six-month conversion-tracking failure I diagnosed and fixed.',
+    context:'Physio Matters is a specialist physiotherapy clinic in Royton, Greater Manchester, running Google Ads, Meta and LinkedIn.',
+    did:[
+      'Diagnosed and fixed a Meta conversion tracking failure: six months and £746 spent recording zero real conversions.',
+      'Ran a reporting integrity audit, separating raw clicks from the roughly five genuine form fills, and rebuilt GA4 tracking by source and medium.',
+      'Optimised Google Ads (Target CPA, keyword cleanup) and relaunched LinkedIn with a new strategy and ad copy.',
+      'Prioritised a Screaming Frog technical audit (27 issues, P1–P5) and pivoted keyword strategy from generic B2B terms to condition-based targeting (stroke, MS, Parkinson\u2019s).'
+    ],
+    tools:['Google Ads','Meta Ads','GA4','GTM','Screaming Frog','LinkedIn']
+  },
+  {
+    client:'Citywide Housing', emp:'', period:'Oct 2025 – present',
+    disc:['seo','ppc'],
+    blurb:'An SEO-led lead engine for a guaranteed-rent brand, generating inbound leads organically over a 12-month-plus programme.',
+    context:'Citywide Housing runs a guaranteed rent scheme for landlords across Yorkshire, Greater Manchester, Lancashire and the Midlands. I led a full strategic repositioning and have run the ongoing organic content and SEO programme that drives its inbound enquiries. The figures below are a representative two-month sample (March and May 2026) from that longer run.',
+    did:[
+      'Repositioned the brand and built a structured three-theme acquisition funnel (Renters\u2019 Rights Act awareness, landlord risk and compliance, guaranteed-rent solution) moving cold readers toward enquiry.',
+      'Ran a sustained content programme of around five blogs a week, every post SEO-optimised, averaging a TruSEO score of 84.6/100 in May with a single post reaching 100.',
+      'Generated inbound leads through organic search alone, with no paid spend, captured and qualified in the GoHighLevel CRM via a lead qualification and routing automation.',
+      'Earned page-one rankings for terms including "housing association Bradford" and "citywide housing", and grew traffic 17.4% over a 28-day window.'
+    ],
+    results:[['Inbound organic leads (2-month sample)','~71'],['Channel','SEO &amp; content only (no paid)'],['Blogs published (2 months)','~44'],['Avg TruSEO score (May)','84.6 / 100'],['Traffic growth','+17.4% (28-day window)'],['Programme length','12 months+ and ongoing']],
+    report:'reports/citywide-housing-seo-report.pdf',
+    tools:['SEMrush','GoHighLevel','GA4','RankMath / TruSEO','Content strategy']
+  },
+  {
+    client:'Citywide Blocks', emp:'', period:'2025 – 2026',
+    disc:['seo'],
+    blurb:'A complete SEO content marketing programme built on specialist "problem block" positioning.',
+    context:'Citywide Blocks buys blocks of flats burdened with complex problems: cladding and fire safety issues, financial distress and management disputes. I recognised the generic property strategy did not fit and redirected it into a specialist niche.',
+    did:[
+      'Built a seven-pillar content architecture and a 96-post twelve-month editorial calendar.',
+      'Set content rules and benchmarks, keyword and audience strategy, technical SEO and schema planning.',
+      'Designed a conversion framework, eight lead magnets, email sequences and paid media across Google, Meta and LinkedIn.',
+      'Produced a full KPI framework, a £173,500 budget, risk mitigation and a launch roadmap.'
+    ],
+    results:[['Year-one targets','96+ posts, 12k+ monthly visitors'],['Keyword goal','75+ in top 10'],['Lead goal','350+ valuation requests'],['List goal','2,500+ subscribers']],
+    tools:['SEMrush','Schema','Google / Meta / LinkedIn Ads']
+  },
+  {
+    client:'Blog Writing Package', emp:'Freelance', period:'2025 – 2026',
+    disc:['seo','social'],
+    blurb:'Fifteen SEO-optimised blogs across three property clients, all to a defined house style.',
+    context:'Three complete five-blog SEO content packages built to a single set of blog rules, adapting it across very different property businesses.',
+    did:[
+      'Wrote five blogs each for Citywide Blocks, Citywide Housing and A.J Residences (The Gambia).',
+      'Applied the house style throughout: focus keyword in title and URL, TL;DR opener, structured H2/H3, roughly 1.29% keyword density, LSI terms, three CTAs and FAQ sections.',
+      'Delivered local-SEO targeting for Northern regions and diaspora audiences.',
+      'Produced a full image-optimisation guide (21 images with concepts, file names and alt text) and internal-linking strategies with cross-linking matrices.'
+    ],
+    tools:['Keyword research','On-page SEO','Content strategy']
+  },
+  {
+    client:'Ethical Wealth Academy / Ayub Kayat', emp:'Freelance', period:'2026',
+    disc:['social'],
+    blurb:'Full social media content function for a property-investment educator across two parallel accounts.',
+    context:'Ethical Wealth Academy is a UK property investment education company ("profit with purpose") founded by Ayub Kayat in Leeds. I ran two accounts in parallel: his personal brand and the company page, on a £500/month retainer.',
+    did:[
+      'Built the brand foundation: two distinct voices, bios, profile optimisation, a cross-promotion strategy and an onboarding document.',
+      'Created a 140+ question brand discovery guide, supported the discovery session and turned it into a usable brand profile with a confidentiality rule around the founder\u2019s backstory.',
+      'Ran several content calendar cycles (launch, a six-week viral strategy and a high-frequency 5-posts-a-week calendar) and an event funnel across three dates.',
+      'Authored a ten-section Digital Marketing Strategy and Operations Manual, and caught a pricing error before it went live.'
+    ],
+    tools:['Instagram','Facebook','TikTok','Brand strategy']
+  },
+  {
+    client:'Kydos Digital (Agency Brand)', emp:'Freelance', period:'Apr – May 2026',
+    disc:['social'],
+    blurb:'A full month of in-house social content, fully scripted, plus cold-audience concepts and brand voice direction.',
+    context:'Owned the agency\u2019s own social output: planning, scripting and a client-ready deliverable, set deliberately against generic corporate copy.',
+    did:[
+      'Built a 30-day calendar (30 posts across Reels, Carousels and Static, 3–4 a week) researched against 2026 trends, weaving in anti-AI-fatigue, social SEO, the LinkedIn video revival and UK awareness days.',
+      'Wrote all 30 posts in full: hooks, Reel scripts, slide-by-slide carousel copy, captions and tailored hashtags.',
+      'Packaged the calendar into a branded, formatted Word document deliverable.',
+      'Defined the brand voice (punchy, honest, human) and produced 30 cold-audience static concepts plus a POV-style Reel.'
+    ],
+    tools:['Content strategy','Copywriting','Brand voice','Word']
+  },
+  {
+    client:'Cheetah Transformation', emp:'', period:'2025 – 2026',
+    disc:['seo','analytics','social'],
+    blurb:'SEO and analytics performance analysis, a site-speed audit and a LinkedIn content concept.',
+    context:'A Smartsheet consultancy client. I sat on the execution side: gathering and analysing data, running audits and producing client-ready deliverables.',
+    did:[
+      'Produced a two-part driver analysis and a two-year trend report from GA4, Search Console and SEMrush, delivered as a client report.',
+      'Ran a site-speed audit across ten pages with PageSpeed Insights, documented with developer-ready observations.',
+      'Created a LinkedIn staff-spotlight content concept with a reusable question set.',
+      'Wrote a standalone, self-explanatory design brief so a designer could build the template without prior context.'
+    ],
+    tools:['GA4','Search Console','SEMrush','PageSpeed Insights','Scoro']
+  },
+  {
+    client:'Silks Estates', emp:'', period:'2026',
     disc:['web'],
-    blurb:'Placeholder card. Replace this with a short summary of a real project you delivered.',
-    context:'Describe the client, the brief and the situation you were working in.',
-    did:['Describe what you personally did.','Add one point per line.'],
-    results:[['Metric','Add a real, verifiable result']],
-    tools:['Add tools','Add skills']
+    blurb:'A full front-end redesign of a lettings website, built on a reusable token-based design system.',
+    context:'Silks Estates is a residential lettings and property management brand. I led the Phase 1 visual redesign, moving it from a generic look to a confident branded identity.',
+    did:[
+      'Built a complete design system in CSS: brand palette around #662E91, shadow and radius scales, Swiss-grid spacing tokens, custom animations, reusable utilities, a branded scrollbar and accessible focus rings.',
+      'Rebuilt the Header as a sticky blurred nav bar with an active-link indicator and a responsive off-canvas mobile menu.',
+      'Designed the Hero with an accent headline, dual CTAs and a floating search card.',
+      'Iterated from feedback: restored dropped links, cut the hero overlay and re-centred content.'
+    ],
+    tools:['Next.js (App Router)','Tailwind CSS','TypeScript']
   }
 ];
 
